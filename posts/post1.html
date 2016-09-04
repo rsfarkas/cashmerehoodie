@@ -9,13 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Cashmere Hoodie</title>
+    <title>Creating a Blog </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+
     <!--JQUERY-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
     <script> 
@@ -73,61 +74,68 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/hoodie.jpeg')">
+    <header class="post-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="site-heading">
-                        <h1>Cashmere Hoodie</h1>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Creating a Contact Form</h1>
+                        <h2 class="subheading">An exercise in forms and programming.</h2>
+                        <span class="meta">September 01, 2016</span>
+                        <hr>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <a href="posts/post.html">
-                        <h2 class="post-title">
-                            Creating a Blog
-                        </h2>
-                        <h3 class="post-subtitle">
-                           From creating a concept to writing some code.
-                        </h3>
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>No one exists in a bubble.</p>
+
+                    <p>As a theme for my 5 in 5 project, I wanted to explore who I am as an MFADT student. Am I a developer? creative technolgist? Artist? One of the things that makes all of these types of work possible is communication. While I was happy with the look and feel of my blog, I felt that it was limited in the sense that there was no way for readers to engage, to give feedback or ask questions. </p>
+
+                    <h2 class="section-heading">Process</h2>
+
+                    <p>I started out my project by writing the HTML and CSS for the blog page.Having worked as a front-end developer for the 8 months prior to starting at DT, this was the area I felt most comfortable in. I used a form structure in the HTML. My goal for the CSS was to create a simple form page, that was clear and motivated the user to participate.</p>
+                    
+                     <a href="#">
+                        <img class="img-responsive" src="img/contactHTML.png" alt="contact form HTML">
                     </a>
-                    <p class="post-meta">August 29, 2016</p>
-                </div>
-                <hr>
-                 <div class="post-preview">
-                    <a href="posts/post1.html">
-                        <h2 class="post-title">
-                            Creating a Contact Form 
-                        </h2>
-                        <h3 class="post-subtitle">
-                           An exercise in forms and programming.
-                        </h3>
+                    <span class="caption text-muted">Contact form HTML</span>
+
+
+                    <h2 class="section-heading">Getting the Form to Work</h2>
+
+                    <p>My main resource for this form was <a href="https://formspree.io/"> formspree.io </a>. This service helps you take HTML forms, collect and formatsthe JSON data before sending it to your email. </p>
+
+                    <p>To give a higher end feel to the contact form I opted to handle some of the validation client-side using javascript, AJAX and the JQuery library.</p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/regex.png" alt="regex pattern checker">
                     </a>
-                    <p class="post-meta">August 29, 2016</p>
+                    <span class="caption text-muted">Email Validation Using a RegEx Pattern</span>
+
+                    <p>I use the JQuery “submit” event handler to bind to the submit button on the #contatForm portion of my HTML Page. When the submit button is pushed, the contactForm executed a function I define below. The value of each form field is stored in a variable. The ajax-response is also stored.</p>
+
+                    </p>I then use an if/else statement to validate the form’s inputs. For example I want to check that none of the variables are blank and that the email address is valid. If the form was invalidly filled out I use JQUERY to insert some html containing an error message.  If all is well, a POST is sent to formspree.io, which forwards the contents of the form it to the email I provide them. </p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/contactCODE.png" alt="contact form HTML">
+                    </a>
+                    <span class="caption text-muted">Contact Form JS/JQUERY</span>
                 </div>
-                <hr>
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                </ul>
             </div>
         </div>
-    </div>
+    </article>
 
     <hr>
 
     <!-- Footer -->
     <div id="footer"></div>
-
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -136,7 +144,7 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contactForm.js"></script>
+    <script src="js/contactFrom.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
