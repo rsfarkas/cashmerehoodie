@@ -35,6 +35,12 @@ a img:hover,
 a img:focus {
   cursor: zoom-in;
 }
+
+#imgsmall{
+  max-height:400px !important;
+  margin:auto !important;
+}
+
 blockquote {
   color: #777777;
   font-style: italic;
