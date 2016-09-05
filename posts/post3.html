@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Creating a Blog </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="../css/clean-blog.css" rel="stylesheet">
+
+    <!--JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+    <script> 
+    $(function(){
+      $("#footer").load("footer.html"); 
+    });
+    </script>
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="post-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Pixel Manipulation</h1>
+                        <h2 class="subheading">Deconstructing Images</h2>
+                        <span class="meta">September 03, 2016</span>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                    <p> The third project in my 5-5 projects serious sought out to really explore what it means to be a finished work. Inspired by a quote from the Met's exhibit "Unfinished", I wanted to see what decomposing something traditionally thought of as complete would look. </p> 
+
+                     <blockquote>Under attack is the rationalistic notion that art is a form of work that results in a finished product.<br>-Robert Morris</blockquote>
+
+                     <p> Cy Twombly's "Untitled I-VI (Green Paintings) ca. 1986  inspired me to try different methods to decompose images, and experiment with color and form.</p>  
+
+                      <a href="#">
+                        <img class="img-responsive"  src="../img/twombly.jpg" alt="Bitmap GIF">
+                    </a>
+
+
+                   <h2 class="section-heading">Process</h2>
+
+                   <p>My first experiment was to decompase my profile image using bitmapping. Through <a href="http://larixk.nl/experiments/sort/"> Bitmap Sorter by Larixk</a> I played with the controls of direction, scale, and threshold to manipulate my image. Bitmap images are made up of objects drawn mathematicaly. Using this editor I was able to zooom in and enlarge the pixels, creating new shapes.</p> 
+
+                     <a href="#">
+                        <img class="img-responsive" loop="-1" src="../img/bitmap.gif" alt="Bitmap GIF">
+                    </a>
+
+                            <span class="caption text-muted">Bitmap GIF</span>
+
+                     <p>My second experiment was to agin decompase my profile image but using pixel sorting. Through <a href="http://www.pixelsort.me/">pixelsort.me</a> I  took the grid of pixels and ordered them according to their color value. This allowed me to manipulate my image in a different way then bitmap sorting. By performing various manipulations on the same image I was able to experiment with the makeup (colors, pixels) in order to see what new works of art could be created starting from a "finished" work</p> 
+
+
+                     <a href="#">
+                        <img class="img-responsive" loop="-1" src="../img/pixel.gif" alt="Bitmap GIF">
+                    </a>
+                            <span class="caption text-muted">Pixel Sorting GIF</span>
+
+                    <p>GIFS were made using <a href ="http://gifcreator.me/">GIFCreator</a> in order to string together the different versions of each image. This time lapse allows the viewer to see the image being manipulated in a simulation of real time.</p>
+
+                     <h2>Challenges, Constraints, and Criteria</h2>
+
+                    <p>Learning to create and embed a GIF was a challenge. Creating this project allowed me to learn to use an online GIF creator as well as learn to use HTML loops. The constraints of this project involved only being able to use a digital medium. Were I to take this project further I would be interested in deconstructing something in physical form. I believe that having another dimension would make the work more interesting.</p>
+
+                    <p> The criteria for the experiement was simply to create what could be construed as a "finished" work by taking something concrete and making it abstract. I believe that I achieved my goal, as each version of the original image is beatiful and a piece of art in it's own right.</p>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/contactForm.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

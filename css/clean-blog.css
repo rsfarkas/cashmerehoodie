@@ -40,6 +40,9 @@ a img:focus {
   max-height:400px !important;
   margin:auto !important;
 }
+.img-responsive{
+  margin:auto !important;
+}
 
 blockquote {
   color: #777777;
