@@ -96,11 +96,11 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <p>No one exists in a bubble.</p>
 
-                    <p>As a theme for my 5 in 5 project, I wanted to explore who I am as an MFADT student. Am I a developer? creative technolgist? Artist? One of the things that makes all of these types of work possible is communication. While I was happy with the look and feel of my blog, I felt that it was limited in the sense that there was no way for readers to engage, to give feedback or ask questions. </p>
+                    <p>As a theme for my 5 in 5 project, I wanted to explore who I am as an MFADT student. Am I a developer? A creative technologist? An artist? One of the things that makes all of these types of works possible is communication. While I was happy with the look and feel of my blog, I felt that it was limited in the sense that there was no way for readers to engage, to give feedback or ask questions.</p>
 
                     <h2 class="section-heading">Process</h2>
 
-                    <p>I started out my project by writing the HTML and CSS for the blog page. Having worked as a front-end developer for the 8 months prior to starting at DT, this was the area I felt most comfortable in. I used a form structure in the HTML. My goal for the CSS was to create a simple form page, that was clear and motivated the user to participate.</p>
+                    <p>I started my project by writing the HTML and CSS for the blog page. Having worked as a front-end developer for the 8 months prior to starting at DT, this was the area I felt most comfortable with. I wrote a form in HTML. My goal for the accompanying CSS was to create a simple form page, that was clear and motivated the user to participate.</p>
 
                      <a href="#">
                         <img class="img-responsive" src="../img/contactHTML.png" alt="contact form HTML">
@@ -110,18 +110,18 @@
 
                     <h2 class="section-heading">Getting the Form to Work</h2>
 
-                    <p>My main resource for this form was <a href="https://formspree.io/"> formspree.io </a>. This service helps you take HTML forms, collect and formatsthe JSON data before sending it to your email. </p>
+                    <p>My main resource for this form was <a href="https://formspree.io/"> formspree.io </a>. This service receives inputs as JSON, and collects and formats the data before forwarding it along to your email. This is a critical service for my blog as it is hosted as a static site (with no backed) via github pages. I have the advantage of having worked with formspree before on the contact form for an older portfolio page and enjoyed it’s simplicity.</p>
 
-                    <p>To give a higher end feel to the contact form I opted to handle some of the validation client-side using javascript, AJAX and the JQuery library.</p>
+                    <p>To give a higher-end feel to the contact form I opted to handle some of the validation client-side using javascript, AJAX and the jQuery library.</p>
 
                     <a href="#">
                         <img class="img-responsive" src="../img/regex.png" alt="regex pattern checker">
                     </a>
                     <span class="caption text-muted">Email Validation Using a RegEx Pattern</span>
 
-                    <p>I use the jQuery “submit” event handler to bind to the submit button on the #contatForm portion of my HTML Page. When the submit button is pushed, the contactForm executed a function I define below. The value of each form field is stored in a variable. The result of the ajax call is also stored and later displayed in the contact form.</p>
+                    <p>I use the jQuery “submit” event handler to bind to the submit button on the #contatForm portion of my HTML Page. When the submit button is pressed, the contactForm executes a function I define below. At a high level, the function stores the value of each form field in a variable which will eventually be forwarded along to my email via formspree.</p>
 
-                    </p>I then use an if/else statement to validate the form’s inputs. For example I want to check that none of the variables are blank and that the email address is valid. If the form was invalidly filled out I use JQUERY to insert some html containing an error message.  If all is well, a POST is sent to formspree.io, which forwards the contents of the form it to the email I provide them. </p>
+                    <p>Before sending I use an if/else statement to validate the form’s inputs. For example, I want to check that none of the variables are blank and that the email address is valid. If the form was invalidly filled out I use jQuery to insert some html containing an error message. If all is well, a POST is submitted to formspree.io, which forwards the contents of the form it to the email I provide them.</p>
 
                     <a href="#">
                         <img class="img-responsive" src="../img/contactCODE.png" alt="contact form HTML">
@@ -130,13 +130,13 @@
 
                     <h2>Challenges, Constraints, and Criteria</h2>
 
-                    <p> Using jQuery to write the contact form was the biggest challenge for me, as it the skill I am the least familiar with. I overcame the challenge by going through several tutorials and doing my best to structure my code in a similar fashion. The constraints I gave myself for this project were one day to complete it, and that the code had to be concise so that it could be reused for future projects. The criteria were simply that the form worked and was easy to use.</p>
+                    <p>Using jQuery to write the contact form was the biggest challenge for me, as it the skill I am the least familiar with. I overcame the challenge by going through several tutorials and doing my best to structure my code in a similar fashion. The constraints I gave myself for this project were one day to complete it, and that the code had to be concise so that it could be reused for future projects. The criteria were simply that the form worked and was easy to use.</p>
 
-                    <p> While the code and design of this project are mostly complete, a huge component of this project is viewer participation. For this reason, the project will never truly be complete, as participation is ongoing.</p>
+                    <p>While the code and design of this project are mostly complete, a huge component of this project is viewer participation. For this reason, the project will never truly be complete, as participation is ongoing.</p>
 
                      <h2>Conclusion</h2>
 
-                    <p>Overall, I think that making my site interactive was an important first project for my 5-5. I hope to receive feedback from my peers as I continue to post my work. By finding outself within the context of our communities, in this case DT, it becames easier for one to determine who they are, and who they aspire to be. If I were to do another iteration of the project I would find a way to store subscribers and email them prompts to be answered.</p>
+                    <p>Overall, I think that making my site interactive was an important first project for my 5-5. I hope to receive feedback from my peers as I continue to post my work. By finding ourselves within the context of our communities, in this case DT, it becomes easier for one to determine who they are, and who they aspire to be. If I were to do another iteration of the project I would find a way to store subscribers and email them prompts to be answered.</p>
                 </div>
             </div>
         </div>
