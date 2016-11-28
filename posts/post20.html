@@ -99,13 +99,27 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                   <h1>Battery Power</h1>
-                  <p>In order to make a more realistic prototype, the physical component needed to be battery powered. If it was powered from a usb, then it would not be portable. In order to replace the power source I connected the hardware to a battery using an on off switch.</p>
+                  <p>Although the physical component was function with the iphone acting as a controller through the littleBits app, I felt like it would be better to show how the game interaction would work. In order to do this I set out to code one 'success' interaction using Processing and Arduino.</p>
                   <a href="#">
-                    <img class="img-responsive" src="../img/batteryPower.png" alt="Battery Power">
+                    <img class="mw50 img-responsive" src="../img/arduinoMonkey.png" alt="Arduino">
                 </a>
-                <p> In order to be able to easily access this switch and change the battery the physical component would need some sort of opening made from a zipper, snaps, or velcro during actual production.</p>
-                <iframe src="https://player.vimeo.com/video/193422915" width="640" height="1138" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <p><a href="https://vimeo.com/193422915">Battery Power Monkey</a></p>
+                <p>The first step I took was to create a button to take the user from one scene to the other using a button. The code set a clickable area over the 'button'. If the button was clicked, the code increments up loading the next image.</p>
+                 <a href="#">
+                    <img class="mw50 img-responsive" src="../img/ProcessingMonkey.png" alt="Processing Code">
+                </a>
+                <br>
+                <iframe src="https://player.vimeo.com/video/193427687" width="320" height="569" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <p><a href="https://vimeo.com/193427687">Processing Scene Switch</a></p>
+                <p>Next I needed to make the code interact with the physical component. Using Firmata, I was able to connect the Arduino to Processing. This process took several tries, as the Arduino IDE crashed continously.</p>
+                <p>After successfuly loading firmata I was able to incorporate Arduino commands into my processing code.</p>
+                  <a href="#">
+                    <img class="mw50 img-responsive" src="../img/firmataMonkey.png" alt="Processing Code">
+                </a>
+                <br>
+                <div id="vidoPlayer">
+                <iframe src="https://player.vimeo.com/video/193429244" width="320" height="569" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <p><a href="https://vimeo.com/193429244">Firmata Code</a></p>
+                </div>
             </div>    
         </div>
     </div>
