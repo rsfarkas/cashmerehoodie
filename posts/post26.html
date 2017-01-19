@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Vote with Friends</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<!-- Theme CSS -->
+<link href="../css/clean-blog.css" rel="stylesheet">
+<link href="../css/clean-blog.min.css" rel="stylesheet">
+
+<!--JQUERY-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+<script> 
+$(function(){
+$("#footer").load("../footer.html"); 
+});
+</script>
+<style>
+.mw50{
+max-width:50% !important;
+}
+.mw70{
+max-width:70% !important;
+}
+</style>
+
+<!-- Custom Fonts -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            Menu <i class="fa fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="../about.html">About</a>
+            </li>
+            <li>
+                <a href="../contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="post-header">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+                <h1>Vote with Friends</h1>
+                <h2 class="subheading">For when you just can't decide.</h2>
+                <span class="meta">December 18th, 2016</span>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+<!-- Post Content -->
+<article>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h1>Design Question</h1>
+            <p>Voicing a different opinion within a group of friends can be intimidating,leading to an inability for the group to make a decision or resulting in a decision with unhappy participants. How can we make group decision making easier and less stressful?</p>
+            <h1>Design Values</h1>
+                <ul>
+                    <li>Fun</li>
+                    <li>Work in real time</li>
+                    <li>Allow for multiple polls to run at once</li>
+                    <li>Simple colors to maintain focus on data</li>
+                </ul>
+            <h1>Tech Stack</h1>
+                <ul>
+                    <li>Node backend</li>
+                    <li>Mongo data store via mLab</li>
+                    <li>Express web server</li> 
+                    <li>Socket.io client to server communication</li>
+                </ul>
+            <h1>User Flow</h1>   
+             <p>Step 1: The first page allows users to see current polls, as well as create a new one. When polls are generated they recieve a unique url, to allow for multiple polls to run at once.</p> 
+            <a href="#">
+                <img class="mw50 img-responsive" src="../img/voteWithFriends.png" alt="HomePage">
+            </a>
+           <p>Step 2: Users access the second page either by clicking on a poll name from the main page, or by navigating to the poll's unique url. This url may be shared by the poll creater or other users.Users select one of the radio buttons and press submit in order to cast their vote.</p>
+             <a href="#">
+                <img class="mw50 img-responsive" src="../img/votingpage.png" alt="Voting Page">
+            </a>
+            <p>Step 3: Once users vote they are redirected to the results page where they can see a bar graph tallying their groups votes. Because the data is sent via sockets as each new vote is cast the graph is updated.</p>
+            <a href="#">
+                <img class="mw70 img-responsive" src="../img/friendsGraph.png" alt="Voting Page">
+            </a>
+        </div>
+    </div>
+</article>
+
+<hr>
+
+<!-- Footer -->
+<div id="footer"></div>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="../js/jqBootstrapValidation.js"></script>
+<script src="../js/contactForm.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="../js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Gather</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<!-- Theme CSS -->
+<link href="../css/clean-blog.css" rel="stylesheet">
+<link href="../css/clean-blog.min.css" rel="stylesheet">
+
+<!--JQUERY-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+<script> 
+$(function(){
+$("#footer").load("../footer.html"); 
+});
+</script>
+<style>
+.mw50{
+max-width:50% !important;
+}
+</style>
+
+<!-- Custom Fonts -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            Menu <i class="fa fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="../about.html">About</a>
+            </li>
+            <li>
+                <a href="../contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="post-header">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+                <h1>Gather</h1>
+                <h2 class="subheading">A potluck coordination service.</h2>
+                <span class="meta">December 12th, 2016</span>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+<!-- Post Content -->
+<article>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h1>Design Question</h1>
+            <p>How can we organize potluck contributions to ensure unique complementary dishes?</p>
+            <h1>Design Values</h1>
+            <ul>
+            <li>Look and feel of a lifestyle blog</li>
+            <li>Straightforward</li>
+            <li>Easy to use</li>
+            </ul>
+            <h1>Tech Stack</h1>
+                <ul>
+                <li>Node backend</li>
+                <li>Mongo data store via mLab</li>
+                <li>Express web server</li>
+                </ul>
+            <h1>Design Process and User Flow</h1>
+                <p>The design question I sought to answer was "how can we organize potluck contributions to ensure unique complementary dishes?". To respond to this I sought out to create dynamic web application in order to allow guests to sign up and delete dishes to bring to a potluck.</p>
+            <a href="#">
+                <img class="img-responsive" src="../img/gatherHome.png" alt="HomePage">
+            </a>
+            <p>A complex background image was chosen in order to help the user imagine the detail oriented potluck which Gather would help them organize. The colors are meant to be soothing while the user imagines themselves surrounded by nature, escaping daily life. The join button is welcoming, and gives users a sense of belonging.</p>
+             <a href="#">
+                <img class="img-responsive" src="../img/menuSignup.png" alt="Signup">
+            </a>
+            <p>As the user registers they enter their name, dish, and catagorize it as an "appetizer", "main", or "dessert". After the form is submitted, a card is posted above which allows them to delete their entry should they change their mind.</p>
+             <a href="#">
+                <img class="img-responsive" src="../img/menu.png" alt="Menu">
+            </a>
+            <p>Dishes are filtered into the menu by their "appetizer", "main", or "dessert" tags. The menu page creates a clear layout for guests and hosts to ensure that the dishes are complementary and properly distributed between catagories.</p>
+            <a href="#">
+                <img class=" mw50 img-responsive" src="../img/mobileGatherHome.png" alt="Home">
+            </a>
+            <p>Although this application should be available through the browser, the most common use case would be millenials on the go. It was crucial that the mobile experience was just as elegent and simple to use.</p>
+                 
+            <a href="#">
+                <img class="mw50 img-responsive" src="../img/mobileGatherNav.png" alt="Home Nav">
+            </a>
+            <p>A hamburger menu allows the user to navigate to other pages. By extending the full height of the page, the menu attracts the user's attention.</p>
+             <a href="#">
+                <img class="mw50 img-responsive" src="../img/mobileGatherSignup.png" alt="Mobile Signup">
+            </a>
+             <p>The registration form remains on the bottom of the screen and the cards stack in order to keep the app flow clear for users.</p>
+             <a href="#">
+                <img class="mw50 img-responsive" src="../img/mobileGatherMenu.png" alt="Mobile Menu">
+            </a>
+            <p>Finally, the user is able to access the menu from their mobile device enabling them to easily manage their gathering.</p>
+        </div>
+    </div>
+</article>
+
+<hr>
+
+<!-- Footer -->
+<div id="footer"></div>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="../js/jqBootstrapValidation.js"></script>
+<script src="../js/contactForm.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="../js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
