@@ -25,6 +25,10 @@ h6 {
   font-weight: 800;
 }
 
+h1{
+  font-size:31px !important;
+}
+
 a {
   color: #333333;
 }
