@@ -36,19 +36,19 @@
             color:#000;
         } 
 
-    .carousel-control.left { left: -120px; }
-    .carousel-control.right { right: -120px; }
+        .carousel-control.left { left: -120px; }
+        .carousel-control.right { right: -120px; }
         .mw50{
             max-width:50% !important;
         }
-    @media screen and (max-width: 845px){
-        .carousel-control.left { left: -50px; }
-    .carousel-control.right { right: -50px; }
-    }    
-     @media screen and (max-width: 500px){
-        .carousel-control.left { left: -10px; }
-    .carousel-control.right { right: -10px; }
-    } 
+        @media screen and (max-width: 845px){
+            .carousel-control.left { left: -50px; }
+            .carousel-control.right { right: -50px; }
+        }    
+        @media screen and (max-width: 500px){
+            .carousel-control.left { left: -10px; }
+            .carousel-control.right { right: -10px; }
+        } 
 
     </style>
 
@@ -123,12 +123,12 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <h1>Design Question</h1>
                     <p>How might we call attention to the dangers and absurdity of xenophobia by revealing the inherent similarities, rather than the distinctions,in the human experience?</p>
-                    <p>How did I come up with this?</p>
+                    <p>The domains I was interested in exploring were xenophobia and interactivity in the context of environment, both physical and nonphysical.</p>
                     <h1>Design Values</h1>
                     <ul>
-                        <li>Look and feel of a lifestyle blog</li>
-                        <li>Straightforward</li>
-                        <li>Easy to use</li>
+                        <li>Critical of current political state</li>
+                        <li>Speculative</li>
+                        <li>Manipulates environment</li>
                     </ul>
                     <h1>First Prototype</h1>
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -140,38 +140,108 @@
                             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                         </ol>
-
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                              <img src="../img/EnvironProj/project1proposal-01.png" alt="...">
-                          </div>
-                          <div class="item">
-                            <img src="../img/EnvironProj/project1proposal-02.png" alt="...">
+                                <img src="../img/EnvironProj/project1proposal-01.png" alt="...">
+                            </div>
+                            <div class="item">
+                                <img src="../img/EnvironProj/project1proposal-02.png" alt="...">
+                            </div>
+                            <div class="item">
+                                <img src="../img/EnvironProj/project1proposal-03.png" alt="...">
+                            </div>
+                            <div class="item">
+                                <img src="../img/EnvironProj/project1proposal-04.png" alt="...">
+                            </div>
+                            <div class="item">
+                                <img src="../img/EnvironProj/project1proposal-05.png" alt="...">
+                            </div>
                         </div>
-                        <div class="item">
-                            <img src="../img/EnvironProj/project1proposal-03.png" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="../img/EnvironProj/project1proposal-04.png" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="../img/EnvironProj/project1proposal-05.png" alt="...">
-                        </div>
-                    </div>
 
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <h1>Second Prototype</h1>
+                    <p>After the feedback from the first presentation of my prototype, I decided to change the context for the prototype. A disaster was not necessary to get people to use this object if the situation were made more extreme.</p>
+                    <p>In order to flesh out ideas about the physical object, I built a physical protoype to test. Using littleBits I connected a battery, a bluetooth low energy bit, and a splitter to connect a vibration motor and led light. I used the bluetooth low energy bit to connect to the littleBits application, where I was able tomake the vibration motor and led line stronger and weaker by using the slider.</p>
+                    <a href="#">
+                        <img class="img-responsive" src="../img/EnvironProj/IMG_1584.jpg" alt="HomePage">
                     </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <h1>Second Prototype</h1>
-                <p>Changes based on feedback</p>  
+                    <p>After testing the physical prototype, I determined that the vibration of the object was too intrusive. The device's notifications should be gentle, allowing the user to hide them from others if necessary. The light made users feel comforted and safe, making them more likely to approach strangers who were also glowing.</p>
+                    <h1>Third Prototype</h1>
+                    <p>The feedback that I recieved from my second proposal mostly related to my concept. In order to better deal with xenophobism with a critical approach to current politics the narrative needed to deal more with governmental control.</p>
+                    <p>I recreated the narrative to make the wearable device mandatory. The government has officially catagorized race, and the society is structured around the interaction or lack there of between different "Enclaves".</p>   
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <a href="#">
+                                <img src="../img/EnvironProj/projectProposal.png" class="thumbnail img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <a href="#">
+                                <img src="../img/EnvironProj/DesignQuestion.png" class="thumbnail img-responsive">
+                            </a>
+                        </div>
+                    </div><!--row-->
+                    <div class="row">    
+
+                        <div class="col-sm-6 col-xs-12">
+                            <a href="#">
+                                <img src="../img/EnvironProj/audienceContext.png" class="thumbnail img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <a href="#">
+                                <img src="../img/EnvironProj/domains.png" class="thumbnail img-responsive">
+                            </a>
+                        </div>
+                    </div><!--row-->
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <a href="#">
+                                <img src="../img/EnvironProj/precedents.png" class="thumbnail img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <a href="#">
+                                <img src="../img/EnvironProj/precedentsCont.png" class="thumbnail img-responsive">
+                            </a>
+                        </div>
+                    </div><!--row-->
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <a href="#">
+                                <img src="../img/EnvironProj/intialSchematics.png" class="thumbnail img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <a href="#">
+                                <img src="../img/EnvironProj/technology.png" class="thumbnail img-responsive">
+                            </a>
+                        </div>
+                    </div><!--row-->
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <a href="#">
+                                <img src="../img/EnvironProj/userScenario.png" class="thumbnail img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <a href="#">
+                                <img src="../img/EnvironProj/Sources.png" class="thumbnail img-responsive">
+                            </a>
+                        </div>
+                    </div><!--row-->
+                    <p> The product proposal also included a user guide. This guide was intended to appear as a sample packet that a citizen would recieve from the Global Government. The user is taken through setup, use, and troubleshooting. Because the guide is created by the government it markets itself as a product that will only glow between Enclave members.</p>
+                    </div><!-- main container-->
             </div>
         </div>
     </article>
