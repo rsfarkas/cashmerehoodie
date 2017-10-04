@@ -52,7 +52,9 @@ a img:focus {
 .img-responsive{
   margin:auto !important;
 }
-
+.tac{
+  text-align: center;
+}
 blockquote {
   color: #777777;
   font-style: italic;
