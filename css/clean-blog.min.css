@@ -461,6 +461,9 @@ form .row:first-child .floating-label-form-group {
 .mw50{
   max-width:50%;
 }
+.mw70{
+  max-width:70%;
+}
 img::selection {
     color: #fff;
     background: 0 0
